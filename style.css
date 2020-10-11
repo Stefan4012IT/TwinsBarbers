@@ -7,7 +7,7 @@
 html, body {
     background-color: #fff;
     color: #000;
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Libre Baskerville', 'Sansita Swashed', cursive;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -59,6 +59,7 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+    font-family: 'Sansita Swashed';
 }
 
 .naslov-span {
@@ -166,15 +167,64 @@ header {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 120%;
-    border-bottom: 3px solid transparent;
-    
+    font-weight: 400;
+    font-size: 110%;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1px;
+    border-bottom-width: 8px;
 }
-
+/*793900*/
 .main-nav li a:hover, 
 .main-nav li a:active {
-    border-bottom: 3px solid #793900;
+    border-bottom: 2px solid #333;
+}
+/*hover active color: #93541d*/
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* O_NAMA */
+/* ----------------------------------------------------------------------------------------------------------*/
+
+.o_nama {
+    position: relative;
+    background-color: #777;
+    height: 70vh;
+    width: 100%;
+}
+
+.slogan {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 220%;
+    width: 100%;
+}
+
+.slogan:after {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #000;
+    content: "";
+    left: 50%;
+    transform: translate(-50%);
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.o_nama_text {
+    position: relative;
+    color: #fff;
+    font-size: 120%;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30%;
+    text-align: justify;
     
 }
 
@@ -187,6 +237,17 @@ header {
     position: relative;
     background-color: #555;
     height: 70vh;
+    border-bottom: 5px solid #000;
+    border-top: 5px solid #000;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    z-index: 1200;
 }
 
 .ease-bckg {
@@ -199,7 +260,7 @@ header {
     transform: translate(-50%);
     z-index: 50;
 }
-
+/*#793900*/
 .buff {
     position: absolute;
     top: 0;
@@ -207,7 +268,15 @@ header {
     width: 100%;
     left: 50%;
     transform: translate(-50%);
-    opacity: .9;
+    opacity: .8;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: opacity .5s ease;
+}
+
+.buff:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 
 .studio1, .studio2, .studio3, .studio4 {
@@ -218,20 +287,66 @@ header {
 
 .studio1 {
     top: 0;
+    border-bottom: 4px solid #000;
 }
 
 .studio2 {
     bottom: 0;
+    border-top: 4px solid #000;
 }
 
 .studio3 {
     right: 0;
     top: 0;
+    border-bottom: 4px solid #000;
 }
 
 .studio4 {
     right: 0;
     bottom: 0;
+    border-top: 4px solid #000;
+}
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* TIM */
+/* ----------------------------------------------------------------------------------------------------------*/
+
+.tim {
+    position: relative;
+    height: 70vh;
+    background-color: #000;
+}
+
+.tim_position {
+    position: absolute;
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tim_member_1, .tim_member_2, .tim_member_3 {
+}
+
+.tim_member_1 {
+    background-color: #fff;
+    width: 30%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.tim_member_2 {
+    background-color: #c1c1c1;
+    width: 30%;
+    height: 100%;
+}
+
+.tim_member_3 {
+    background-color: #6d6d6d;
+    width: 30%;
+    height: 100%;
+    margin-right: 10px;
 }
 
 /*---------------------ANIMATIONS---------------------*/
