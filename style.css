@@ -189,6 +189,9 @@ header {
     background-color: #777;
     height: 70vh;
     width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(img/carerra.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .slogan {
@@ -222,8 +225,8 @@ header {
     font-size: 120%;
     width: 75%;
     left: 50%;
-    transform: translate(-50%);
-    top: 30%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     text-align: justify;
     
 }
