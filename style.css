@@ -188,7 +188,7 @@ header {
 .o_nama {
     position: relative;
     background-color: #777;
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(img/carerra.jpg);
     background-size: cover;
@@ -198,7 +198,7 @@ header {
 .slogan {
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 10%;
     transform: translate(-50%);
     text-align: center;
     color: #fff;
@@ -239,7 +239,7 @@ header {
 .salon {
     position: relative;
     background-color: #555;
-    height: 70vh;
+    height: 90vh;
     border-bottom: 5px solid #000;
     border-top: 5px solid #000;
 }
@@ -316,7 +316,7 @@ header {
 
 .tim {
     position: relative;
-    height: 70vh;
+    height: 90vh;
     background-color: #000;
 }
 
@@ -327,6 +327,7 @@ header {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .member-info {
@@ -340,13 +341,14 @@ header {
 
 .tim_member_1, .tim_member_2, .tim_member_3 {
     border-radius: 10px;
+    width: 30%;
+    height: 75%;
 }
 
 
 .tim_member_1 {
     position: relative;
-    width: 30%;
-    height: 100%;
+    
     margin-left: 10px;
 }
 
@@ -390,8 +392,6 @@ header {
 
 .tim_member_2 {
     position: relative;
-    width: 30%;
-    height: 100%;
 }
 
 .tim_member_2-front {
@@ -431,8 +431,6 @@ header {
 
 .tim_member_3 {
     position: relative;
-    width: 30%;
-    height: 100%;
     margin-right: 10px;
 }
 
@@ -471,31 +469,72 @@ header {
     transform: rotateY(0);
 }
 
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* FOOTER */
+/* ----------------------------------------------------------------------------------------------------------*/
+
+footer {
+    position: relative;
+    background-color: #f4f4f4;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.adresa {
+    grid-column: 1/2;
+}
+
+.foot_logo {
+    grid-column: 2/3;
+}
+
+.telefon {
+    grid-column: 3/4;
+}
+
+.foot_info {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.logo_u_footeru {
+    position: absolute;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /*---------------------ANIMATIONS---------------------*/
 
 @keyframes slider {
     0% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/owel.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/owel-min.jpg);
         background-position: bottom;
     }
     33%{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/owel.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/owel-min.jpg);
         background-position: top;
     }
-    33.3% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jjjordan.jpg);
+    33.001% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jjjordan-min.jpg);
         background-position: bottom;
     }
     66% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jjjordan.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jjjordan-min.jpg);
         background-position: top;
     }
-    66.6% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/oldman.jpg);
+    66.001% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/oldman-min.jpg);
         background-position: top;
     }
     100%{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/oldman.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/oldman-min.jpg);
         background-position: bottom;
     }
 }
