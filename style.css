@@ -244,14 +244,6 @@ header {
     border-top: 5px solid #000;
 }
 
-.top {
-    position: absolute;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-    background-color: #f4f4f4;
-    z-index: 1200;
-}
 
 .ease-bckg {
     position: absolute;

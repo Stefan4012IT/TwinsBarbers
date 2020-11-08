@@ -1,22 +1,101 @@
-@media only screen and (max-width: 1400px){
-    
-    
-}
-
-@media only screen and (max-width: 1200px){
-    
-    
-    
-}
-
-@media only screen and (max-width: 1023px){
-    
-    
-}
 
 @media only screen and (max-width: 767px){
+    body {
+        font-size: 16px;
+    }
     
+    .o_nama {
+        height: 100vh;
+    }
     
+    .slogan {
+        font-size: 125%;
+    }
     
+    .slogan:after {
+        margin-top: 10px;
+    }
+    
+    .o_nama_text {
+        font-size: 90%
+    }
+    
+    .salon {
+        display: none;
+    }
+    .tim {
+        height: 150vh;
+    }
+    .tim_position {
+        flex-direction: column;
+        height: 90%;
+    }
+    
+    .tim_member_1, .tim_member_2, .tim_member_3 {
+        border-radius: 10px;
+        width: 75%;
+        height: 25%;
+    }
+    
+    .tim_member_1 {
+        margin-left: 0;  
+        margin-top: 2%;
+    }
+    
+    .tim_member_3 {
+        margin-left: 0;  
+        margin-bottom: 2%;
+    }
+    
+    footer {
+        height: 35vh;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .adresa {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    .foot_logo {
+        grid-row: 2/3;
+    }
+
+    .telefon {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+    
+    .foot_info {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 100%;
+    }    
+    
+    .logo_u_footeru {
+        height: 40%;
+    }
 }
 
+@media only screen and (max-width: 480px){
+    
+    
+    
+    h1 {
+        font-size: 350%;
+    }
+    
+    .naslov-span {
+        top: 65%;
+    }
+    
+    .logo-white {
+        height: 20%;
+    }
+    
+    .main-nav {
+        font-size: 50%;
+    }
+}
